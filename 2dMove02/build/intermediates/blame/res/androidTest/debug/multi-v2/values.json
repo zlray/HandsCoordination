@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\HandsCoordination\\2dMove02\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "F:\\HandsCoordination\\2dMove02\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,99",
+                        "endLines": "2,4",
+                        "endColumns": "43,8",
+                        "endOffsets": "94,192"
+                    }
+                }
+            ]
+        }
+    ]
+}

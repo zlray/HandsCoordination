@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.xqlh.handscoordination.activity.IntroduceActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/app_logo" />
+
+    <ImageView
+        android:id="@+id/iv_introduce"
+        android:layout_width="1000dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/introduce" />
+
+    <Button
+        android:id="@+id/bt_A"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_introduce"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/bt_B"
+        android:background="@drawable/select_lv"
+        android:gravity="center"
+        android:text="WM场景"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/bt_B"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_introduce"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/select_danlan"
+        android:gravity="center"
+        android:text="双螺旋场景"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/bt_return"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_introduce"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/bt_B"
+        android:background="@drawable/select_anlan"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.xqlh.handscoordination.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/app_logo" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:gravity="right|center"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bt_exit_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/exit"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/bt_exit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:text="退出"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="智能双手调节仪测试系统"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/bt_record"
+        style="@style/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/circle_main_yellow"
+        android:text="测试记录" />
+
+    <Button
+        android:id="@+id/bt_start"
+        style="@style/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_toStartOf="@+id/bt_record"
+        android:background="@drawable/circle_main_green"
+        android:text="进入测试" />
+
+    <Button
+        android:id="@+id/bt_login"
+        style="@style/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/bt_record"
+        android:background="@drawable/circle_main_blue"
+        android:text="登录" />
+
+</RelativeLayout>

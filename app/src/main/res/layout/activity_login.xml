@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.xqlh.handscoordination.activity.LoginActivity">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/app_logo" />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/vp_main"
+        android:layout_below="@+id/imageView2"
+        android:background="@drawable/bg_edittext_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.xqlh.handscoordination.utils.MyRadioButton
+            android:id="@+id/rb_student"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="学生登录"
+            android:textColor="@drawable/selecer_login_radiobutton"
+            android:textSize="30sp" />
+
+        <com.xqlh.handscoordination.utils.MyRadioButton
+            android:id="@+id/rb_teacher"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="教师登录"
+            android:textColor="@drawable/selecer_login_radiobutton"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_main"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/btn_green_noraml"
+        android:state_checked="true">
+
+    </item>
+
+    <item android:color="@color/color_bg_identifying_code_disable">
+
+    </item>
+
+
+</selector>
